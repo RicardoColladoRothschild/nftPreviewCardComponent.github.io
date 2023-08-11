@@ -1,3 +1,9 @@
+$body-background-Color:#0d192b;
+$main-background-Color:#14253d;
+$border-Color:#2f415b;
+$text-primary-Color:#8bacda;
+$text-secondary-Color:#00fff7;
+
 *{
     box-sizing:border-box;
     padding:0;
@@ -6,6 +12,7 @@
 
 html{
     font-size:62.5%;
+    font-family: 'Outfit', sans-serif;
 }
 
 body{
@@ -15,27 +22,70 @@ body{
     place-items: center;
     justify-content: center;
     align-items: center;
+    background-color:$body-background-Color;
 }
 
 .main-container{
     width:300px;
-    height:420px;
+    height:470px;
+    padding:8px;
     
     display:flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    
-
+    background-color:$main-background-Color;
+    border-radius: 12px;
     .nft-image-container{
-        width:288px;
-        height:288px;
+        width:260px;
+        height:275px;
         border-radius:8px;
-        margin-bottom:15px;
-
+        margin-bottom:20px;
+        position:relative;
+        top:1px;
         img{
             width:100%;
             height: 100%;
             border-radius: 8px;;
         }
+    }
+
+    .card-container--title{
+        width:250px;
+        height:auto;
+        margin-bottom:10px;
+        h1{
+            color:white;
+            font-size: 2.0rem;
+            line-height: 2.8rem;
+            margin-bottom:8px;
+            font-weight: 600;
+        }
+
+        p{
+            color:$text-primary-Color;
+            font-size:1.4rem;
+            line-height: 2.5rem;
+        }
+    }
+
+    .currency-info-container{
+        display:flex;
+        
+       
+        
+        .currency-value--container{
+            display:flex;
+            
+            svg{
+                margin-right:8px;
+            }
+            p{
+                font-size:1.4rem;
+                font-weight:500;
+                color:$text-secondary-Color;
+            }
+        }    
     }
 }
 
