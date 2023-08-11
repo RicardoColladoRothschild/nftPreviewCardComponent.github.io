@@ -70,12 +70,18 @@ body{
     }
 
     .currency-info-container{
+        width:90%;
         display:flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid $border-Color;
+        padding-bottom: 8px;;
         
        
         
         .currency-value--container{
             display:flex;
+            width:100px;
             
             svg{
                 margin-right:8px;
@@ -85,7 +91,51 @@ body{
                 font-weight:500;
                 color:$text-secondary-Color;
             }
-        }    
+        }
+        
+        .remaining-day-info--container{
+            width:100px;
+            display:flex;
+            justify-content: center;
+            padding-bottom: 3px;
+           
+                span{
+                    margin-right:6px;
+
+                    svg{
+                        position:relative;
+                        top:3.5px;
+                    }
+                }
+                p{
+                    color:$text-primary-Color;
+                    font-weight:600;
+                    font-size:1.4rem;
+                }
+        }
+    }
+
+    .creator-info--container{
+        width:90%;
+        height:65px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        padding-top:5px;
+        margin-bottom:15px;
+
+        .creator-profile--container{
+            width:32px;
+            height:32px;
+            border-radius: 50px;
+            border: 1px solid white;
+            margin-right:18px;
+            img{
+                width:28px;
+                height:28px;
+
+            }
+        }
     }
 }
 

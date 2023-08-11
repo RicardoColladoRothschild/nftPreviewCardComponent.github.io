@@ -61,10 +61,16 @@ body {
   line-height: 2.5rem;
 }
 .main-container .currency-info-container {
+  width: 90%;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #2f415b;
+  padding-bottom: 8px;
 }
 .main-container .currency-info-container .currency-value--container {
   display: flex;
+  width: 100px;
 }
 .main-container .currency-info-container .currency-value--container svg {
   margin-right: 8px;
@@ -73,4 +79,42 @@ body {
   font-size: 1.4rem;
   font-weight: 500;
   color: #00fff7;
+}
+.main-container .currency-info-container .remaining-day-info--container {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3px;
+}
+.main-container .currency-info-container .remaining-day-info--container span {
+  margin-right: 6px;
+}
+.main-container .currency-info-container .remaining-day-info--container span svg {
+  position: relative;
+  top: 3.5px;
+}
+.main-container .currency-info-container .remaining-day-info--container p {
+  color: #8bacda;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+.main-container .creator-info--container {
+  width: 90%;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  margin-bottom: 15px;
+}
+.main-container .creator-info--container .creator-profile--container {
+  width: 32px;
+  height: 32px;
+  border-radius: 50px;
+  border: 1px solid white;
+  margin-right: 18px;
+}
+.main-container .creator-info--container .creator-profile--container img {
+  width: 28px;
+  height: 28px;
 }
