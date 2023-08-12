@@ -27,8 +27,9 @@ body{
 
 .main-container{
     width:300px;
-    height:470px;
+    height:auto;
     padding:8px;
+    padding-top:18px;
     
     display:flex;
     justify-content: center;
@@ -119,7 +120,7 @@ body{
         width:90%;
         height:65px;
         display:flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         padding-top:5px;
         margin-bottom:15px;
@@ -134,6 +135,17 @@ body{
                 width:28px;
                 height:28px;
 
+            }
+        }
+
+        p{
+          font-size:1.4rem;
+          color:$text-primary-Color;
+          font-weight: 400;
+
+            span{
+                color:whitesmoke;
+                margin-left:2px;
             }
         }
     }

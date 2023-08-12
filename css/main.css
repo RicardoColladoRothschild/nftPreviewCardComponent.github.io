@@ -21,8 +21,9 @@ body {
 
 .main-container {
   width: 300px;
-  height: 470px;
+  height: auto;
   padding: 8px;
+  padding-top: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,7 +103,7 @@ body {
   width: 90%;
   height: 65px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   padding-top: 5px;
   margin-bottom: 15px;
@@ -117,4 +118,13 @@ body {
 .main-container .creator-info--container .creator-profile--container img {
   width: 28px;
   height: 28px;
+}
+.main-container .creator-info--container p {
+  font-size: 1.4rem;
+  color: #8bacda;
+  font-weight: 400;
+}
+.main-container .creator-info--container p span {
+  color: whitesmoke;
+  margin-left: 2px;
 }
